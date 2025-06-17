@@ -43,7 +43,7 @@ A more advanced exercise to test your understanding:
 If you have Git installed, you can clone the repository using:
 
 ```
-git clone https://github.com/username/java-pet-shop-workshop.git
+git clone https://github.com/quenton1225/PetShopFrameWork.git
 ```
 
 ## How to Complete the Exercises
