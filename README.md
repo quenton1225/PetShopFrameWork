@@ -51,7 +51,7 @@ git clone https://github.com/username/java-pet-shop-workshop.git
 1. Look for comments marked with `// =============================`
 2. Read the exercise instructions in the comments
 3. Fill in the missing code
-4. Run the `SimplePetShop.java` file to test your implementation
+4. Run the `Main.java` file to test your implementation
 
 ## Submitting Your Solution
 
