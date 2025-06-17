@@ -114,6 +114,39 @@ class Cat extends Pet {
     }
 }
 
+// Fish class - extends Pet class
+class Fish extends Pet {
+    private String waterType; // "Freshwater" or "Saltwater"
+    
+    public Fish(String name, int age, double price, String waterType) {
+        super(name, age, price);
+        this.waterType = waterType;
+    }
+    
+    // =============================
+    // EXERCISE 4: Complete the getWaterType method
+    // Hint: Look at Dog's getBreed method for reference
+    // =============================
+    public String getWaterType() {
+        // Your code here
+    }
+    
+    @Override
+    public void eat() {
+        System.out.println(getName() + " is eating fish food");
+    }
+    
+    // Special method for fish
+    public void swim() {
+        System.out.println(getName() + " is swimming!");
+    }
+    
+    @Override
+    public String toString() {
+        return super.toString() + ", Water Type: " + waterType;
+    }
+}
+
 // Pet Shop class
 class PetShop {
     private String name;
@@ -184,41 +217,8 @@ class PetShop {
     }
 }
 
-// Fish class - extends Pet class
-class Fish extends Pet {
-    private String waterType; // "Freshwater" or "Saltwater"
-    
-    public Fish(String name, int age, double price, String waterType) {
-        super(name, age, price);
-        this.waterType = waterType;
-    }
-    
-    // =============================
-    // EXERCISE 4: Complete the getWaterType method
-    // Hint: Look at Dog's getBreed method for reference
-    // =============================
-    public String getWaterType() {
-        // Your code here
-    }
-    
-    @Override
-    public void eat() {
-        System.out.println(getName() + " is eating fish food");
-    }
-    
-    // Special method for fish
-    public void swim() {
-        System.out.println(getName() + " is swimming!");
-    }
-    
-    @Override
-    public String toString() {
-        return super.toString() + ", Water Type: " + waterType;
-    }
-}
-
 // Main class, program entry point
-public class SimplePetShop {
+public class Main {
     public static void main(String[] args) {
         // Create pet shop
         PetShop shop = new PetShop("Happy Pet Shop", 10);
